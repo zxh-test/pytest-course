@@ -4,6 +4,11 @@ import pytest
 def add(x, y):
     return x + y
 
-@add
-def test_add():
-    assert 3 == add(1, 2)
+
+def test1():
+    return 1
+
+def test2(test1):
+    print(test1)
+
+test2(test1)
